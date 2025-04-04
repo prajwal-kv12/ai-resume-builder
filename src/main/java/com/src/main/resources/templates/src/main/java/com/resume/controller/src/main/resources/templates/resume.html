@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Resume</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .resume-container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        h2 { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h2 th:text="${name}"></h2>
+        <p><strong>Email:</strong> <span th:text="${email}"></span></p>
+        <p><strong>Skills:</strong> <span th:text="${skills}"></span></p>
+        <p><strong>Experience:</strong> <span th:text="${experience}"></span></p>
+        <p><strong>Education:</strong> <span th:text="${education}"></span></p>
+    </div>
+</body>
+</html>
